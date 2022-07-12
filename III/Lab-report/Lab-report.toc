@@ -1,0 +1,10 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {russian}{}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Постановка задачи}{3}{section.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Вычисление преобразований Фурье}{4}{section.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Эффект наложения спектра}{5}{section.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Рябь}{7}{section.0.4}%

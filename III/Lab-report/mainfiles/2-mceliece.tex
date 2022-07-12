@@ -1,0 +1,22 @@
+%!TEX root = ../Lab-report.tex
+
+\section{Вычисление преобразований Фурье}
+$F(\lambda) = \int_{-\infty}^{+\infty} \! f(t)e^{-2 \pi i \lambda} \,dt $\\ \\
+Вычислим преобразование Фурье для функции $ f_1(t) $: \\
+$ sin^3(t) = \frac{1}{4}(3sin(t) - sin(3t) \Rightarrow f_1(t) = \frac{1}{4}(g(t)-h(t))$ \\
+$ g(t) = 3e^{-3|t|}sin(t)$ \\
+$ h(t) = 3e^{-3|t|}sin(3t) $ \\
+$ f(t)sin(at) \xrightarrow{\mathscr{F}} \frac{F(\lambda - \frac{a}{2\pi}) - F(\lambda + \frac{a}{2\pi})}{2i} \Rightarrow G(\lambda) = \frac{3}{2i}(\widehat{G}(\lambda - \frac{1}{2pi}) - \widehat{G}(\lambda + \frac{1}{2pi})),$ \\ 
+ $e^{-3|t|} \xrightarrow{\mathscr{F}} \widehat{G}(\lambda), $
+$ \widehat{G}(\lambda) = \frac{6}{9+4 \pi^2 \lambda^2} \Rightarrow G(\lambda) = \frac{9}{i}\left[ \frac{1}{9+(1 - 2\pi \lambda)^2} - \frac{1}{9+(1 + 2\pi \lambda)^2} \right] $ \\
+$ h(t) \xrightarrow{\mathscr{F}} H(\lambda) = \frac{\widehat{G}(\lambda - \frac{3}{2pi}) - \widehat{G}(\lambda + \frac{3}{2pi})}{2i} \Rightarrow H(\lambda) = \frac{3}{i}(\frac{1}{9+(3 - 2\pi \lambda)^2} - \frac{1}{9+(3 + 2\pi \lambda)^2}) $  \\
+$ F_1(\lambda) = \frac{9}{4i} \left[ \frac{1}{9+(1 - 2\pi \lambda)^2} - \frac{1}{9+(1 + 2\pi \lambda)^2} - \frac{3}{9+(3 - 2\pi \lambda)^2} + \frac{3}{9+(3 + 2\pi \lambda)^2} \right] $ \\ \\
+Вычислим преобразование Фурье для функции $ f_2(t) $: \\
+$ f_2(t) = \frac{sin(t)-tcos(t)}{t^2} = \frac{1}{t^2}sin(t) - \frac{1}{t}cos(t) = g(t)sin(t) - h(t)cos(t)$ \\
+$ g(t)sin(t) \xrightarrow{\mathscr{F}} \frac{G(\lambda - \frac{1}{2 \pi}) - G(\lambda + \frac{1}{2 \pi})}{2i}, h(t)cos(t) \xrightarrow{\mathscr{F}} \frac{H(\lambda - \frac{1}{2 \pi}) + H(\lambda + \frac{1}{2 \pi})}{2}$ \\
+$ G(\lambda) = -2 \pi^2 \lambda sign(\lambda), H(\lambda) = -i \pi sign(\lambda) \Rightarrow$ \\
+$ F_2(\lambda) = -\frac{\pi^2}{i} \left[ (\lambda - \frac{1}{2 \pi})sign(\lambda - \frac{1}{2 \pi}) - (\lambda + \frac{1}{2 \pi})sign(\lambda + \frac{1}{2 \pi})\right]$ + ... \\ 
+... + $ \frac{i \pi}{2} \left[ sign(\lambda - \frac{1}{2 \pi}) + sign(\lambda + \frac{1}{2 \pi}) \right]$ \\
+$ \Rightarrow F_2(\lambda) = i \pi^2 \lambda \left[ sign(1 - 2 \pi \lambda) + sign(1 + 2 \pi \lambda)\right]$
+
+
